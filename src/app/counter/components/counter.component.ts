@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
       <button class="px-2 bg-red-600" (click)="increaseBy(-1)">-1</button>
     </div>
   `,
-})
+}) 
 
 export class CounterComponent {
   constructor() {  }
