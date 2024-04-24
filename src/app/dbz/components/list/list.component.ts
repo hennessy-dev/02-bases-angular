@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
 
 @Component({
@@ -11,6 +11,20 @@ import { Character } from '../../interfaces/character.interface';
 
 export class ListDbzComponent {
 
-  Characters: Character[] = [];
+  @Input()
+  public characterList: Character[] = [
+    {
+      name: 'Trunks',
+      power: 2000
+    },
+    {
+      name: 'Goku',
+      power: 10000
+    },
+    {
+      name: 'Brolly',
+      power: 3200
+    }
+  ];
 
 }
