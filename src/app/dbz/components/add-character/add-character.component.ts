@@ -8,4 +8,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
-export class AddCharacterComponent { }
+export class AddCharacterComponent {
+
+  flag: boolean = true; 
+
+
+
+}

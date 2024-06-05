@@ -8,7 +8,11 @@
     let isEven = even;
     let isOdd = odd;
   "
-    class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
+    class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600"
+    [ngClass]="{
+      'bg-green-400': isEven,
+      'bg-green-200' : isOdd
+    }">
 
     <span class="text-blue-900"> {{ i }}. </span>
 
@@ -16,11 +20,10 @@
 
     <strong>| Power:  </strong> <span> {{ character.power }} </span> <br>
 
-    <span> Es par: {{ isEven }} </span><br>
-    <span> Es impar: {{ isOdd }} </span><br>
-    <span> Es primero: {{ isFirst }} </span><br>
-    <span> Es ultimo: {{ isLast }} </span><br>
-
+    <span> Es par: {{ isEven ? 'Si' : 'No'  }} </span><br>
+    <span> Es impar: {{ isOdd ? 'Si' : 'No'}} </span><br>
+    <span> Es primero: {{ isFirst ? 'Si' : 'No' }} </span><br>
+    <span> Es ultimo: {{ isLast ? 'Si' : 'No' }} </span><br>
 
   </li>
 </ul>

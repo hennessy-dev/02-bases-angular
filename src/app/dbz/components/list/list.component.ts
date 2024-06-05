@@ -24,6 +24,10 @@ export class ListDbzComponent {
     {
       name: 'Brolly',
       power: 3200
+    },
+    {
+      name: 'Tony Stark', 
+      power: 8000
     }
   ];
 
